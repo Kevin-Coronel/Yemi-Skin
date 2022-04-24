@@ -1,0 +1,112 @@
+/* Resolucion 360px- Mobile*/
+header{
+    display: flex;
+    flex-direction: column;
+
+    a{
+        align-self: center;
+       
+        .img{
+            width: 128px;
+            height: 113.7px;          
+            margin: 32px 32px 0px 32px;
+        }
+
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+        background-image:url(../imagenes/menu.png);
+        width: 32px;
+        height: 32px;
+    }
+    
+    .navbar-dark .navbar-toggler {
+        color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+    }
+
+    .collapsed .show{
+        border-color: black;
+    }
+
+    .bg-dark {
+        background-color: #ffffff!important;
+
+        p{
+            border-bottom: 1px solid rgb(0, 0, 0);
+            padding: 16px;
+            margin-bottom: 0px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000000;
+        }
+    }
+    
+    .navM{
+
+        .lista{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            justify-content: center;
+            margin: 19px 19px 32px 19px;
+            list-style-type: none;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+    
+                li{
+                    justify-self: center;
+    
+                    a {
+                        align-self: center;
+                        color: rgb(0, 0, 0);
+                    }
+                }
+            }
+    }
+    
+}
+
+.navDesk{
+    display: none;
+}
+
+
+/*-------------------Resolucion 1024- Desktop-------------------*/
+
+@media (min-width: 1024px){
+    .navbar{
+        display: none;
+    }
+
+    .navM{
+        display: none;
+    }
+
+    .navDesk{
+        display:contents;
+        .navD{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr;
+            justify-content: center;
+            margin: 64px;
+            list-style-type: none;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            //font-size: 16px;
+    
+                li{
+                    justify-self: center;
+    
+                    a {
+                        align-self: center;
+                        color: rgb(0, 0, 0);
+                    }
+                }
+            }
+    }
+}
