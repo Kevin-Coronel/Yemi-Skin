@@ -8,7 +8,8 @@ header {
   display: flex;
   flex-direction: column; }
   header a {
-    align-self: center; }
+    align-self: center;
+    text-decoration: none; }
     header a .img {
       width: 128px;
       height: 113.7px;
@@ -38,6 +39,7 @@ header {
     grid-template-rows: 1fr;
     justify-content: center;
     margin: 19px 19px 32px 19px;
+    padding: 0px;
     list-style-type: none;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
@@ -46,7 +48,8 @@ header {
       justify-self: center; }
       header .navM .lista li a {
         align-self: center;
-        color: black; }
+        color: black;
+        text-decoration: none; }
 
 .navDesk {
   display: none; }
@@ -79,7 +82,7 @@ header {
 .container .row {
   margin: 0px; }
 
-.container .carousel-control-prev-icon, .container .carousel-control-next-icon {
+.container .carousel-control-prev, .container .carousel-control-next {
   display: none; }
 
 .container .imgCar {
@@ -105,7 +108,7 @@ header {
   flex-direction: column;
   justify-content: center;
   background-color: #f2f0a1;
-  /* border-radius: 100%;*/
+  /*border-radius: 100%;*/
   padding: 32px; }
   .fondoL .title {
     align-self: center;
@@ -166,7 +169,7 @@ header {
     text-align: center; }
   .prevFoot .seguinosD {
     display: none; }
-  .prevFoot .yemi {
+  .prevFoot .ig {
     align-self: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
@@ -182,11 +185,6 @@ header {
       width: 160px; }
     .prevFoot .cuidado .imgD {
       display: none; }
-  .prevFoot .logo {
-    align-self: center;
-    width: 128px;
-    height: 113.7px;
-    margin-bottom: 16px; }
 
 /*-------------------Resolucion 1024- Desktop-------------------*/
 @media (min-width: 992px) {
@@ -245,48 +243,64 @@ header {
         width: 260px; } }
 
 /* Resolucion 360px- Mobile*/
-footer {
+.footerB {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .footerB .logo {
+    align-self: center;
+    width: 128px;
+    height: 113.7px;
+    margin-bottom: 16px; }
+  .footerB .yemi {
+    align-self: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px; }
+
+.footerV {
   background-color: #c6a1cf;
   margin-top: 16px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-items: center; }
-  footer .texto {
+  .footerV .texto {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0.43rem; }
-    footer .texto ul {
+    .footerV .texto ul {
       list-style-type: none;
       padding: 1.1rem;
       margin: 0rem; }
-      footer .texto ul ol {
+      .footerV .texto ul ol {
         font-family: "Quicksand", sans-serif;
         font-size: 12px;
         padding: 8px;
         font-weight: 600; }
-      footer .texto ul a {
+      .footerV .texto ul a {
         color: #000000; }
-        footer .texto ul a li {
+        .footerV .texto ul a li {
           font-family: "Quicksand", sans-serif;
           font-size: 12px;
           padding: 8px; }
-        footer .texto ul a .imgFoot {
+        .footerV .texto ul a .imgFoot {
           width: 12px;
           height: 12px;
           margin-right: 4px; }
 
 /*Resolucion 768- Mobile*/
 @media (min-width: 768px) {
-  footer {
+  .footerV {
     justify-content: space-evenly; } }
 
 /*-------------------Resolucion 1024- Desktop-------------------*/
 @media (min-width: 1024px) {
-  footer .texto ul ol {
+  .footerV .texto ul ol {
     font-size: 16px; }
-  footer .texto ul a li {
+  .footerV .texto ul a li {
     font-size: 16px; } }
 
 /*WhatsAppBtn*/

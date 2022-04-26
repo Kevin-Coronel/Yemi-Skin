@@ -5,7 +5,7 @@
             margin: 0px;
         }
         
-        .carousel-control-prev-icon, .carousel-control-next-icon  {
+        .carousel-control-prev, .carousel-control-next  {
             display: none;
         }
 
@@ -39,7 +39,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: #f2f0a1;
-   /* border-radius: 100%;*/
+    /*border-radius: 100%;*/
     padding: 32px;
 
     .title{
@@ -125,12 +125,13 @@
         display: none;
     }
 
-    .yemi{
+    .ig{
         align-self: center; 
         font-family: 'Quicksand', sans-serif; 
         font-size: 14px;
         font-weight: 500;
         margin-bottom: 16px;
+        
     }
 
     .cuidado{
@@ -148,13 +149,7 @@
             display: none;
         }
     }
-
-    .logo{
-        align-self: center;
-        width: 128px;
-        height: 113.7px;
-        margin-bottom: 16px;
-    }
+    
 }
 
 /*-------------------Resolucion 1024- Desktop-------------------*/

@@ -1,6 +1,27 @@
 /* Resolucion 360px- Mobile*/
+.footerB{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
-footer{
+    .logo{
+        align-self: center;
+        width: 128px;
+        height: 113.7px;
+        margin-bottom: 16px;
+    }
+
+    .yemi{
+        align-self: center; 
+        font-family: 'Quicksand', sans-serif; 
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+}
+
+
+.footerV{
     background-color: #c6a1cf;
     margin-top: 16px;
     display: flex;
@@ -48,14 +69,14 @@ footer{
 /*Resolucion 768- Mobile*/
 
 @media (min-width: 768px){
-    footer{
+    .footerV{
         justify-content: space-evenly;
     }
 }
 
 /*-------------------Resolucion 1024- Desktop-------------------*/
 @media (min-width: 1024px){
-   footer .texto ul{
+   .footerV .texto ul{
        ol{
             font-size: 16px;           
         }  

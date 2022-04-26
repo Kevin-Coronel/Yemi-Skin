@@ -5,7 +5,8 @@ header{
 
     a{
         align-self: center;
-       
+        text-decoration: none;
+
         .img{
             width: 128px;
             height: 113.7px;          
@@ -51,6 +52,7 @@ header{
             grid-template-rows: 1fr;
             justify-content: center;
             margin: 19px 19px 32px 19px;
+            padding: 0px;
             list-style-type: none;
             font-family: 'Quicksand', sans-serif;
             font-weight: 400;
@@ -62,6 +64,7 @@ header{
                     a {
                         align-self: center;
                         color: rgb(0, 0, 0);
+                        text-decoration: none;
                     }
                 }
             }
