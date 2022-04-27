@@ -44,19 +44,22 @@ header{
         }
     }
     
-    .navM{
+    .navHorizontal{
 
         .lista{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 1fr;
-            justify-content: center;
-            margin: 19px 19px 32px 19px;
-            padding: 0px;
             list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0;
             font-family: 'Quicksand', sans-serif;
             font-weight: 400;
             font-size: 12px;
+            margin-bottom: 52.9px;
+            margin-top: 62px;
+
+                .desktop{
+                    display: none;
+                }
     
                 li{
                     justify-self: center;
@@ -73,44 +76,16 @@ header{
     
 }
 
-.navDesk{
-    display: none;
-}
-
-
 /*-------------------Resolucion 1024- Desktop-------------------*/
 
 @media (min-width: 1024px){
-    .navbar{
-        display: none;
-    }
-
-    .navM{
-        display: none;
-    }
-
-    .navDesk{
-        display:contents;
-        .navD{
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: 1fr;
-            justify-content: center;
-            margin: 64px;
-            list-style-type: none;
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 500;
-            font-size: 14px;
-            //font-size: 16px;
-    
-                li{
-                    justify-self: center;
-    
-                    a {
-                        align-self: center;
-                        color: rgb(0, 0, 0);
-                    }
+    header {
+        .navHorizontal {
+            .lista {
+                .desktop {
+                    display: inline-block;
                 }
             }
+        }
     }
 }

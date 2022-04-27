@@ -51,30 +51,32 @@ header .bg-dark p {
   color: #000000;
 }
 
-header .navM .lista {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 19px 19px 32px 19px;
-  padding: 0px;
+header .navHorizontal .lista {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0;
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 12px;
+  margin-bottom: 52.9px;
+  margin-top: 62px;
 }
 
-header .navM .lista li {
+header .navHorizontal .lista .desktop {
+  display: none;
+}
+
+header .navHorizontal .lista li {
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-header .navM .lista li a {
+header .navHorizontal .lista li a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -82,46 +84,10 @@ header .navM .lista li a {
   text-decoration: none;
 }
 
-.navDesk {
-  display: none;
-}
-
 /*-------------------Resolucion 1024- Desktop-------------------*/
 @media (min-width: 1024px) {
-  .navbar {
-    display: none;
-  }
-  .navM {
-    display: none;
-  }
-  .navDesk {
-    display: contents;
-  }
-  .navDesk .navD {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 64px;
-    list-style-type: none;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-  }
-  .navDesk .navD li {
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-  .navDesk .navD li a {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    color: black;
+  header .navHorizontal .lista .desktop {
+    display: inline-block;
   }
 }
 /*# sourceMappingURL=header.css.map */
