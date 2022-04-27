@@ -1,0 +1,131 @@
+.navM{
+    .lista{
+            li{
+                .activado {
+                    color: #671E75;
+                    border-bottom: 1px solid #671E75;
+                    padding-bottom: 0.5rem;
+                }
+            }
+        }
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cajaImgProducto{
+        background: rgba(242, 240, 161, 0.5);
+        width: 294px;
+        height: 294px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 52px;
+
+
+        img {
+            width: 120px;
+            height: auto;
+        }
+    }
+
+    .tituloProducto {
+        font-family: 'Baskerville Old Face';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.0015em;
+        margin-top: 9px;
+    }
+
+    .descripcionProducto {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.001em;
+        width: 246px;
+        margin-top: 8px;
+    }
+
+    .precioProducto {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.0125em;
+        width: 76%;
+    }
+
+    .btnComprar {
+        background: #671E75;
+        box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        width: 294px;
+        height: 48px;
+        border: none;
+        margin-top: 32px;
+
+        a {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.0125em;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+
+}
+
+.cajaIngredientes {
+    margin-top: 64px;
+    width: 294px;
+
+    h3{
+        font-family: 'Baskerville Old Face';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 32px;
+        letter-spacing: 0.0015em;
+        text-align: center;
+    }
+
+    ul {
+        margin-top: 32px;
+    }
+}
+
+.cajaComoUsarlo , .cajaBeneficios {
+    margin-top: 32px;
+    width: 294px;
+
+    h4, h5{
+        font-family: 'Baskerville Old Face';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 32px;
+        letter-spacing: 0.0015em;
+        text-align: center;
+    }
+
+    ol, ul {
+        margin-top: 32px;
+    }
+
+    ul {
+        margin-bottom: 94px;
+    }
+}

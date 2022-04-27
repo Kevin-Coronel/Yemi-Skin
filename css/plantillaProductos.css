@@ -1,0 +1,138 @@
+.navM .lista li .activado {
+  color: #671E75;
+  border-bottom: 1px solid #671E75;
+  padding-bottom: 0.5rem;
+}
+
+.producto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.producto .cajaImgProducto {
+  background: rgba(242, 240, 161, 0.5);
+  width: 294px;
+  height: 294px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 52px;
+}
+
+.producto .cajaImgProducto img {
+  width: 120px;
+  height: auto;
+}
+
+.producto .tituloProducto {
+  font-family: 'Baskerville Old Face';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.0015em;
+  margin-top: 9px;
+}
+
+.producto .descripcionProducto {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.001em;
+  width: 246px;
+  margin-top: 8px;
+}
+
+.producto .precioProducto {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.0125em;
+  width: 76%;
+}
+
+.producto .btnComprar {
+  background: #671E75;
+  -webkit-box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 294px;
+  height: 48px;
+  border: none;
+  margin-top: 32px;
+}
+
+.producto .btnComprar a {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.0125em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.cajaIngredientes {
+  margin-top: 64px;
+  width: 294px;
+}
+
+.cajaIngredientes h3 {
+  font-family: 'Baskerville Old Face';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 32px;
+  letter-spacing: 0.0015em;
+  text-align: center;
+}
+
+.cajaIngredientes ul {
+  margin-top: 32px;
+}
+
+.cajaComoUsarlo, .cajaBeneficios {
+  margin-top: 32px;
+  width: 294px;
+}
+
+.cajaComoUsarlo h4, .cajaComoUsarlo h5, .cajaBeneficios h4, .cajaBeneficios h5 {
+  font-family: 'Baskerville Old Face';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 32px;
+  letter-spacing: 0.0015em;
+  text-align: center;
+}
+
+.cajaComoUsarlo ol, .cajaComoUsarlo ul, .cajaBeneficios ol, .cajaBeneficios ul {
+  margin-top: 32px;
+}
+
+.cajaComoUsarlo ul, .cajaBeneficios ul {
+  margin-bottom: 94px;
+}
+/*# sourceMappingURL=plantillaProductos.css.map */

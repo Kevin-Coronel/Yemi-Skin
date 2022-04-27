@@ -1,0 +1,111 @@
+/* Resolucion 360px- Mobile*/
+.footerB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 60px;
+}
+
+.footerB .logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 128px;
+  height: 113.7px;
+  margin-bottom: 16px;
+}
+
+.footerB .yemi {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.footerV {
+  background-color: #c6a1cf;
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-items: center;
+}
+
+.footerV .texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0.43rem;
+}
+
+.footerV .texto ul {
+  list-style-type: none;
+  padding: 1.1rem;
+  margin: 0rem;
+}
+
+.footerV .texto ul ol {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  padding: 8px;
+  font-weight: 600;
+}
+
+.footerV .texto ul a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footerV .texto ul a li {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.footerV .texto ul a .imgFoot {
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}
+
+/*Resolucion 768- Mobile*/
+@media (min-width: 768px) {
+  .footerV {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+/*-------------------Resolucion 1024- Desktop-------------------*/
+@media (min-width: 1024px) {
+  .footerV .texto ul ol {
+    font-size: 16px;
+  }
+  .footerV .texto ul a li {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
