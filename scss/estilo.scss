@@ -1,34 +1,44 @@
 * {
     margin: 0px;
     padding: 0px;
-}
 
-$fuente1: 'Quicksand', sans-serif;
+	body {
 
-@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Quicksand:wght@400;500;600;700&display=swap');
-@import "layout/header.scss";
-@import "layout/home.scss";
-@import "layout/productos.scss";
-@import "layout/preguntasFrecuentes.scss";
-@import "layout/footer.scss";
+			$fuente1: 'Quicksand', sans-serif;
 
-/*WhatsAppBtn*/
+			@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Quicksand:wght@400;500;600;700&display=swap');
+			@import "layout/header.scss";
+			@import "layout/home.scss";
+			@import "layout/productos.scss";
+			@import "layout/preguntasFrecuentes.scss";
+			@import "layout/seguinos.scss";
+			@import "layout/footer.scss";
 
-.float{
-	position:fixed;
-	width:40px;
-	height:40px;
-	bottom:20px;
-	right:20px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-    font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-    z-index:100;
-}
+			header {
 
-.my-float{
-	margin-top:16px;
+				/*WhatsAppBtn*/
+
+				.float{
+					position:fixed;
+					width:40px;
+					height:40px;
+					bottom:20px;
+					right:20px;
+					background-color:#25d366;
+					color:#FFF;
+					border-radius:50px;
+					text-align:center;
+					font-size:30px;
+					box-shadow: 2px 2px 3px #999;
+					z-index:100;
+
+					.my-float{
+						width: 20px;
+						height: 20px;
+						margin: 0px 0px 13px 2px;
+					}
+				}
+
+			}
+	}
 }

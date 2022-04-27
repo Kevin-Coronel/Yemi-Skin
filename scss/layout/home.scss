@@ -107,51 +107,6 @@
     }  
 }
 
-.prevFoot{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    .seguinos{
-        align-self: center;
-        margin: 32px 0px 16px 0px;  
-        font-family:'Baskervville', serif;
-        font-size: 36px;
-        font-weight: 400;
-        text-align: center;
-    }
-
-    .seguinosD{
-        display: none;
-    }
-
-    .ig{
-        align-self: center; 
-        font-family: 'Quicksand', sans-serif; 
-        font-size: 14px;
-        font-weight: 500;
-        margin-bottom: 16px;
-        
-    }
-
-    .cuidado{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        justify-items: center;
-        margin-bottom: 64px;
-
-        .imgs{
-            width: 160px;
-        }
-
-        .imgD{
-            display: none;
-        }
-    }
-    
-}
-
 /*-------------------Resolucion 1024- Desktop-------------------*/
 @media (min-width: 992px){
     .container {
