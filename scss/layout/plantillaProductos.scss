@@ -30,6 +30,10 @@
             width: 120px;
             height: auto;
         }
+
+        .imgCadaProducto {
+            width: 60px;
+        }
     }
 
     .tituloProducto {
@@ -41,6 +45,17 @@
         text-align: center;
         letter-spacing: 0.0015em;
         margin-top: 9px;
+    }
+
+    .tituloCadaProducto{
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.001em;
+        color: #000000;
     }
 
     .descripcionProducto {
@@ -64,11 +79,44 @@
         width: 76%;
     }
 
+    .precioCadaProducto {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.0125em;
+        color: #000000;
+
+    }
+
     .btnComprar {
         background: #671E75;
         box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
         width: 294px;
+        height: 48px;
+        border: none;
+        margin-top: 32px;
+
+        a {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.0125em;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+
+    .btnComprarPorProducto{
+        background: #671E75;
+        box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        width: 160px;
         height: 48px;
         border: none;
         margin-top: 32px;
@@ -127,5 +175,14 @@
 
     ul {
         margin-bottom: 94px;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .cajaDeProductos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

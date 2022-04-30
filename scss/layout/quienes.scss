@@ -1,0 +1,152 @@
+.contenedor{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .img{
+        width: 296px;
+        height: 228px;
+        background-image: url("../imagenes/quienes\ 1.jpeg");
+        background-size: cover;
+        margin: 32px 0px 32px 0px;
+    }
+
+    .img2{
+        width: 296px;
+        height: 228px;
+        background-image: url("../imagenes/quienes2.jpeg");
+        background-size: cover;
+        margin: 32px 0px 32px 0px;
+    }
+
+}
+
+.title{
+align-self: center;
+text-align: center;
+font-family:'Baskervville', serif;
+font-size: 36px;
+font-weight: 400;
+margin: 32px 0px 32px 0px;
+}
+
+.texto{
+font-family: $fuente1;
+font-weight: 400;
+font-size: 14px;
+line-height: 32px;
+margin: 32px;
+line-height: 24px;
+text-align: left;
+}
+
+.textoD{
+display: none;
+font-family: $fuente1;
+font-weight: 400;
+font-size: 14px;
+line-height: 32px;
+margin: 32px;
+line-height: 24px;
+text-align: left;
+}
+
+.prevFoot{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+.seguinos{
+    align-self: center;
+    margin: 32px 0px 16px 0px;  
+    font-family:'Baskervville', serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.seguinosD{
+    display: none;
+}
+
+.ig{
+    align-self: center; 
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    
+}
+
+.cuidado{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    margin-bottom: 64px;
+
+    .imgs{
+        width: 160px;
+    }
+
+    .imgD{
+        display: none;
+    }
+}
+
+}
+
+/*-------------------Resolucion 1024- Desktop-------------------*/
+@media (min-width: 1024px){
+.contenedor {
+    justify-content: space-around;
+
+    .img2{
+        width: 600px;
+        height: 650px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: 100px;
+    }
+}
+
+.texto{
+    display: none;
+}
+
+.textoD{
+    display: contents; 
+}
+
+}
+
+@media (min-width: 1440px){  
+.contenedor{
+ .img{
+    width: 450px;
+    height: 400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 100px;
+}
+
+    .img2{
+        width: 1000px;
+        height: 1100px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: 100px;
+    }
+
+}
+
+.desk{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+
+}

@@ -2,28 +2,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 17px;
 }
 
 .cajaSeguinos .prevFoot .seguinos {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin: 32px 0px 16px 0px;
-  font-family: 'Baskervville', serif;
-  font-size: 36px;
+  font-family: 'Baskerville Old Face';
+  font-style: normal;
   font-weight: 400;
+  font-size: 36px;
+  line-height: 32px;
   text-align: center;
-}
-
-.cajaSeguinos .prevFoot .seguinosD {
-  display: none;
+  letter-spacing: 0.0015em;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .cajaSeguinos .prevFoot .ig {
@@ -37,13 +33,11 @@
 }
 
 .cajaSeguinos .prevFoot .cuidado {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  justify-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 64px;
 }
 
@@ -51,11 +45,41 @@
   width: 160px;
 }
 
-.cajaSeguinos .prevFoot .cuidado .imgD {
+.cajaSeguinos .mobile {
   display: none;
 }
 
 .cajaSeguinos .desktop {
   display: none;
+}
+
+@media (min-width: 1024px) {
+  .cajaSeguinos .prevFoot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cajaSeguinos .prevFoot .seguinos {
+    display: inline-block;
+    font-size: 40px;
+    margin-top: 40px;
+  }
+  .cajaSeguinos .prevFoot .seguinos br {
+    display: none;
+  }
+  .cajaSeguinos .prevFoot .cuidado .imgs {
+    width: 16rem;
+  }
+  .cajaSeguinos .prevFoot .cuidado .imgMedio {
+    margin: 0 20px;
+  }
+  .cajaSeguinos .prevFoot .desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=seguinos.css.map */

@@ -9,7 +9,9 @@
   /*-------------------Resolucion 1024- Desktop-------------------*/
   /* Resolucion 360px- Mobile*/
   /*-------------------Resolucion 1024- Desktop-------------------*/
+  /*-------------------Resolucion 1024- Desktop-------------------*/
   /*-------------------Resolucion 360px- Mobile-------------------*/
+  /*-------------------Resolucion 1024- Desktop-------------------*/
   /*-------------------Resolucion 1024- Desktop-------------------*/
   /* Resolucion 360px- Mobile*/
   /*Resolucion 768- Mobile*/
@@ -88,17 +90,26 @@
   display: none;
 }
 
-* body header .navHorizontal .lista li {
-  -ms-grid-column-align: center;
-      justify-self: center;
+* body header .navHorizontal .lista li .activado {
+  border-bottom: 1px solid #671E75;
+  padding-bottom: 10px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.0125em;
+  color: #671E75;
 }
 
 * body header .navHorizontal .lista li a {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  color: black;
-  text-decoration: none;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.0125em;
+  color: #000000;
 }
 
 @media (min-width: 1024px) {
@@ -350,7 +361,7 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-* body .cajaProductos .accordion-item .accordion-button {
+* body .cajaProductos .accordion-item .collapsing .accordion-button {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
   background: rgba(242, 240, 161, 0.5);
@@ -359,7 +370,7 @@
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-* body .cajaProductos .accordion-item .accordion-button span {
+* body .cajaProductos .accordion-item .collapsing .accordion-button span {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -367,6 +378,11 @@
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.0125em;
+  color: #000000;
+}
+
+* body .cajaProductos .accordion-item .collapsing .accordion-button span a {
+  text-decoration: none;
   color: #000000;
 }
 
@@ -383,6 +399,379 @@
   text-align: center;
   letter-spacing: 0.001em;
   color: #000000;
+}
+
+* body .cajaProductos .accordion-item .show .accordion-body span a {
+  text-decoration: none;
+  color: #000000;
+}
+
+* body .navM .lista li .activado {
+  color: #671E75;
+  border-bottom: 1px solid #671E75;
+  padding-bottom: 0.5rem;
+}
+
+* body .producto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .producto .cajaImgProducto {
+  background: rgba(242, 240, 161, 0.5);
+  width: 294px;
+  height: 294px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 52px;
+}
+
+* body .producto .cajaImgProducto img {
+  width: 120px;
+  height: auto;
+}
+
+* body .producto .cajaImgProducto .imgCadaProducto {
+  width: 60px;
+}
+
+* body .producto .tituloProducto {
+  font-family: 'Baskerville Old Face';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.0015em;
+  margin-top: 9px;
+}
+
+* body .producto .tituloCadaProducto {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.001em;
+  color: #000000;
+}
+
+* body .producto .descripcionProducto {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.001em;
+  width: 246px;
+  margin-top: 8px;
+}
+
+* body .producto .precioProducto {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.0125em;
+  width: 76%;
+}
+
+* body .producto .precioCadaProducto {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.0125em;
+  color: #000000;
+}
+
+* body .producto .btnComprar {
+  background: #671E75;
+  -webkit-box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 294px;
+  height: 48px;
+  border: none;
+  margin-top: 32px;
+}
+
+* body .producto .btnComprar a {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.0125em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+* body .producto .btnComprarPorProducto {
+  background: #671E75;
+  -webkit-box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 160px;
+  height: 48px;
+  border: none;
+  margin-top: 32px;
+}
+
+* body .producto .btnComprarPorProducto a {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.0125em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+* body .cajaIngredientes {
+  margin-top: 64px;
+  width: 294px;
+}
+
+* body .cajaIngredientes h3 {
+  font-family: 'Baskerville Old Face';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 32px;
+  letter-spacing: 0.0015em;
+  text-align: center;
+}
+
+* body .cajaIngredientes ul {
+  margin-top: 32px;
+}
+
+* body .cajaComoUsarlo, * body .cajaBeneficios {
+  margin-top: 32px;
+  width: 294px;
+}
+
+* body .cajaComoUsarlo h4, * body .cajaComoUsarlo h5, * body .cajaBeneficios h4, * body .cajaBeneficios h5 {
+  font-family: 'Baskerville Old Face';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 32px;
+  letter-spacing: 0.0015em;
+  text-align: center;
+}
+
+* body .cajaComoUsarlo ol, * body .cajaComoUsarlo ul, * body .cajaBeneficios ol, * body .cajaBeneficios ul {
+  margin-top: 32px;
+}
+
+* body .cajaComoUsarlo ul, * body .cajaBeneficios ul {
+  margin-bottom: 94px;
+}
+
+@media (min-width: 1024px) {
+  * body .cajaDeProductos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+* body .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body .contenedor .img {
+  width: 296px;
+  height: 228px;
+  background-image: url("../imagenes/quienes 1.jpeg");
+  background-size: cover;
+  margin: 32px 0px 32px 0px;
+}
+
+* body .contenedor .img2 {
+  width: 296px;
+  height: 228px;
+  background-image: url("../imagenes/quienes2.jpeg");
+  background-size: cover;
+  margin: 32px 0px 32px 0px;
+}
+
+* body .title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-family: 'Baskervville', serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 32px 0px 32px 0px;
+}
+
+* body .texto {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  margin: 32px;
+  line-height: 24px;
+  text-align: left;
+}
+
+* body .textoD {
+  display: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  margin: 32px;
+  line-height: 24px;
+  text-align: left;
+}
+
+* body .prevFoot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body .prevFoot .seguinos {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 32px 0px 16px 0px;
+  font-family: 'Baskervville', serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+* body .prevFoot .seguinosD {
+  display: none;
+}
+
+* body .prevFoot .ig {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+* body .prevFoot .cuidado {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  justify-items: center;
+  margin-bottom: 64px;
+}
+
+* body .prevFoot .cuidado .imgs {
+  width: 160px;
+}
+
+* body .prevFoot .cuidado .imgD {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  * body .contenedor {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  * body .contenedor .img2 {
+    width: 600px;
+    height: 650px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 100px;
+  }
+  * body .texto {
+    display: none;
+  }
+  * body .textoD {
+    display: contents;
+  }
+}
+
+@media (min-width: 1440px) {
+  * body .contenedor .img {
+    width: 450px;
+    height: 400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 100px;
+  }
+  * body .contenedor .img2 {
+    width: 1000px;
+    height: 1100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 100px;
+  }
+  * body .desk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-align: center;
+  }
 }
 
 * body .navM .lista li .activado {
@@ -435,32 +824,113 @@
   }
 }
 
-* body .cajaSeguinos .prevFoot {
+* body .titleCont {
+  text-align: center;
+  font-family: 'Baskervville', serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 32px 0px 32px 0px;
+}
+
+* body .titleContD {
+  display: none;
+}
+
+* body .medios {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body .medios .order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin: 32px;
+}
+
+* body .medios .order .iconos {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+}
+
+* body .medios .order a {
+  color: black;
+  text-decoration: none;
+}
+
+* body .medios .order a p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+@media (min-width: 768px) {
+  * body .medios div {
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 1024px) {
+  * body .titleCont {
+    display: none;
+  }
+  * body .divTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 32px 0px 32px 0px;
+    text-align: center;
+  }
+  * body .divTitle .titleContD {
+    display: contents;
+    font-family: 'Baskervville', serif;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  * body .medios div {
+    margin-left: 25%;
+  }
+}
+
+* body .cajaSeguinos .prevFoot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 17px;
 }
 
 * body .cajaSeguinos .prevFoot .seguinos {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin: 32px 0px 16px 0px;
-  font-family: 'Baskervville', serif;
-  font-size: 36px;
+  font-family: 'Baskerville Old Face';
+  font-style: normal;
   font-weight: 400;
+  font-size: 36px;
+  line-height: 32px;
   text-align: center;
-}
-
-* body .cajaSeguinos .prevFoot .seguinosD {
-  display: none;
+  letter-spacing: 0.0015em;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 * body .cajaSeguinos .prevFoot .ig {
@@ -474,13 +944,11 @@
 }
 
 * body .cajaSeguinos .prevFoot .cuidado {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  justify-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 64px;
 }
 
@@ -488,12 +956,42 @@
   width: 160px;
 }
 
-* body .cajaSeguinos .prevFoot .cuidado .imgD {
+* body .cajaSeguinos .mobile {
   display: none;
 }
 
 * body .cajaSeguinos .desktop {
   display: none;
+}
+
+@media (min-width: 1024px) {
+  * body .cajaSeguinos .prevFoot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * body .cajaSeguinos .prevFoot .seguinos {
+    display: inline-block;
+    font-size: 40px;
+    margin-top: 40px;
+  }
+  * body .cajaSeguinos .prevFoot .seguinos br {
+    display: none;
+  }
+  * body .cajaSeguinos .prevFoot .cuidado .imgs {
+    width: 16rem;
+  }
+  * body .cajaSeguinos .prevFoot .cuidado .imgMedio {
+    margin: 0 20px;
+  }
+  * body .cajaSeguinos .prevFoot .desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 * body .footerB {

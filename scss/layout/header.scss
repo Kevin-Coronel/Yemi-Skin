@@ -62,12 +62,27 @@ header{
                 }
     
                 li{
-                    justify-self: center;
+
+                    .activado {
+                        border-bottom: 1px solid #671E75;
+                        padding-bottom: 10px;
+                        font-family: 'Quicksand';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: 0.0125em;
+                        color: #671E75;
+                    }
     
                     a {
-                        align-self: center;
-                        color: rgb(0, 0, 0);
-                        text-decoration: none;
+                        font-family: 'Quicksand';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: 0.0125em;
+                        color: #000000;
                     }
 
                 }
