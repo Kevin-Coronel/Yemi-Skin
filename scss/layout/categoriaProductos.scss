@@ -15,7 +15,6 @@
     .accordion-item {
         border: 1px solid rgba(0, 0, 0, 0.2);
 
-        .collapsing {
             .accordion-button {
                 border-top-left-radius: calc(0.25rem - 1px);
                 border-top-right-radius: calc(0.25rem - 1px);
@@ -40,15 +39,13 @@
                 }
             } 
 
-        }
-
         .show {
 
             hr {
                 margin: 0;
             }
 
-            .accordion-body {
+            .accordion-body, .collapsing .accordion-body {
 
                 span {
                     font-family: 'Quicksand', sans-serif;

@@ -8,7 +8,7 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.cajaProductos .accordion-item .collapsing .accordion-button {
+.cajaProductos .accordion-item .accordion-button {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
   background: rgba(242, 240, 161, 0.5);
@@ -17,7 +17,7 @@
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.cajaProductos .accordion-item .collapsing .accordion-button span {
+.cajaProductos .accordion-item .accordion-button span {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -28,7 +28,7 @@
   color: #000000;
 }
 
-.cajaProductos .accordion-item .collapsing .accordion-button span a {
+.cajaProductos .accordion-item .accordion-button span a {
   text-decoration: none;
   color: #000000;
 }
@@ -37,7 +37,7 @@
   margin: 0;
 }
 
-.cajaProductos .accordion-item .show .accordion-body span {
+.cajaProductos .accordion-item .show .accordion-body span, .cajaProductos .accordion-item .show .collapsing .accordion-body span {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -48,7 +48,7 @@
   color: #000000;
 }
 
-.cajaProductos .accordion-item .show .accordion-body span a {
+.cajaProductos .accordion-item .show .accordion-body span a, .cajaProductos .accordion-item .show .collapsing .accordion-body span a {
   text-decoration: none;
   color: #000000;
 }
