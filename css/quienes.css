@@ -1,0 +1,170 @@
+.contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor .img {
+  width: 296px;
+  height: 228px;
+  background-image: url("../imagenes/quienes 1.jpeg");
+  background-size: cover;
+  margin: 32px 0px 32px 0px;
+}
+
+.contenedor .img2 {
+  width: 296px;
+  height: 228px;
+  background-image: url("../imagenes/quienes2.jpeg");
+  background-size: cover;
+  margin: 32px 0px 32px 0px;
+}
+
+.title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-family: 'Baskervville', serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 32px 0px 32px 0px;
+}
+
+.texto {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  margin: 32px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.textoD {
+  display: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  margin: 32px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.prevFoot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.prevFoot .seguinos {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 32px 0px 16px 0px;
+  font-family: 'Baskervville', serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.prevFoot .seguinosD {
+  display: none;
+}
+
+.prevFoot .ig {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.prevFoot .cuidado {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  justify-items: center;
+  margin-bottom: 64px;
+}
+
+.prevFoot .cuidado .imgs {
+  width: 160px;
+}
+
+.prevFoot .cuidado .imgD {
+  display: none;
+}
+
+/*-------------------Resolucion 1024- Desktop-------------------*/
+@media (min-width: 1024px) {
+  .contenedor {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contenedor .img2 {
+    width: 600px;
+    height: 650px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 100px;
+  }
+  .texto {
+    display: none;
+  }
+  .textoD {
+    display: contents;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contenedor .img {
+    width: 450px;
+    height: 400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 100px;
+  }
+  .contenedor .img2 {
+    width: 1000px;
+    height: 1100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 100px;
+  }
+  .desk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=quienes.css.map */

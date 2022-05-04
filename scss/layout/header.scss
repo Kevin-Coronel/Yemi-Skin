@@ -42,6 +42,10 @@ header{
             font-size: 14px;
             color: #000000;
         }
+
+        .activado {
+            background: rgba(242, 240, 161, 0.5);
+        }
     }
     
     .navHorizontal{
@@ -95,7 +99,13 @@ header{
 
 @media (min-width: 1024px){
     header {
+        .navbar {
+            display: none;
+        }
+        
         .navHorizontal {
+            margin: 0px 90px;
+            
             .lista {
                 .desktop {
                     display: inline-block;

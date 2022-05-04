@@ -13,14 +13,14 @@
 .cajaProductos {
     
     .accordion-item {
-        border: 1px solid rgba(0, 0, 0, 0.2);
+
+        .accordion-header {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 
             .accordion-button {
                 border-top-left-radius: calc(0.25rem - 1px);
                 border-top-right-radius: calc(0.25rem - 1px);
                 background: rgba(242, 240, 161, 0.5);
-                color: black;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
                 
                 span {
                     font-family: 'Quicksand', sans-serif;
@@ -30,39 +30,70 @@
                     line-height: 18px;
                     text-align: center;
                     letter-spacing: 0.0125em;
-                    color: #000000;
-    
+                    color: black;
+                }
+            }
+        }
+
+        .collapsing {
+
+            .accordion-body {
+
+                span {
+
                     a {
-                        text-decoration: none;
+                        font-family: 'Quicksand', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        text-align: center;
+                        letter-spacing: 0.001em;
                         color: #000000;
+                        text-decoration: none;
+                        text-decoration: none;
                     }
                 }
-            } 
-
-        .show {
+            }
 
             hr {
                 margin: 0;
             }
+        }
 
-            .accordion-body, .collapsing .accordion-body {
+        .collapsed, .show {
+
+            .accordion-body {
 
                 span {
-                    font-family: 'Quicksand', sans-serif;
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 18px;
-                    text-align: center;
-                    letter-spacing: 0.001em;
-                    color: #000000; 
 
                     a {
-                        text-decoration: none;
+                        font-family: 'Quicksand', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        text-align: center;
+                        letter-spacing: 0.001em;
                         color: #000000;
+                        text-decoration: none;
+                        text-decoration: none;
                     }
                 }
             }
+
+            hr {
+                margin: 0;
+            }
         }
+
     } 
+}
+
+/*-------------------Resolucion 1024- Desktop-------------------*/
+
+@media (min-width: 1024px){
+    .cajaProductos{
+        margin: 100.9px 100px 160px 100px;
+    }
 }

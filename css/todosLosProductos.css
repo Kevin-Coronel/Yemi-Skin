@@ -1,1 +1,110 @@
-/* No CSS *//*# sourceMappingURL=todosLosProductos.css.map */
+.cajaDeProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cajaDeProductos .productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cajaDeProductos .productos .cajaImgProducto {
+  background: rgba(242, 240, 161, 0.5);
+  width: 294px;
+  height: 294px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 52px;
+}
+
+.cajaDeProductos .productos .cajaImgProducto .imgCadaProducto {
+  width: 60px;
+}
+
+.cajaDeProductos .productos .cajaImgProducto img {
+  width: 120px;
+  height: auto;
+}
+
+.cajaDeProductos .productos .cajaImgProducto .imgProducto {
+  width: 60px;
+}
+
+.cajaDeProductos .productos .tituloProducto {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.001em;
+  color: #000000;
+}
+
+.cajaDeProductos .productos .precioProducto {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.0125em;
+  color: #000000;
+}
+
+.cajaDeProductos .productos .btnComprarProducto {
+  background: #671E75;
+  -webkit-box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 160px;
+  height: 48px;
+  border: none;
+  margin-top: 32px;
+}
+
+.cajaDeProductos .productos .btnComprarProducto a {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.0125em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .cajaDeProductos .productos {
+    width: 33%;
+  }
+  .cajaDeProductos .productos .tituloProducto {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=todosLosProductos.css.map */

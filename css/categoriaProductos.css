@@ -4,20 +4,18 @@
   padding-bottom: 0.5rem;
 }
 
-.cajaProductos .accordion-item {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.cajaProductos .accordion-item .accordion-button {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
-  background: rgba(242, 240, 161, 0.5);
-  color: black;
+.cajaProductos .accordion-item .accordion-header {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.cajaProductos .accordion-item .accordion-button span {
+.cajaProductos .accordion-item .accordion-header .accordion-button {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  background: rgba(242, 240, 161, 0.5);
+}
+
+.cajaProductos .accordion-item .accordion-header .accordion-button span {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -25,19 +23,10 @@
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.0125em;
-  color: #000000;
+  color: black;
 }
 
-.cajaProductos .accordion-item .accordion-button span a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.cajaProductos .accordion-item .show hr {
-  margin: 0;
-}
-
-.cajaProductos .accordion-item .show .accordion-body span, .cajaProductos .accordion-item .show .collapsing .accordion-body span {
+.cajaProductos .accordion-item .collapsing .accordion-body span a {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -46,10 +35,35 @@
   text-align: center;
   letter-spacing: 0.001em;
   color: #000000;
+  text-decoration: none;
+  text-decoration: none;
 }
 
-.cajaProductos .accordion-item .show .accordion-body span a, .cajaProductos .accordion-item .show .collapsing .accordion-body span a {
-  text-decoration: none;
+.cajaProductos .accordion-item .collapsing hr {
+  margin: 0;
+}
+
+.cajaProductos .accordion-item .collapsed .accordion-body span a, .cajaProductos .accordion-item .show .accordion-body span a {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.001em;
   color: #000000;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+.cajaProductos .accordion-item .collapsed hr, .cajaProductos .accordion-item .show hr {
+  margin: 0;
+}
+
+/*-------------------Resolucion 1024- Desktop-------------------*/
+@media (min-width: 1024px) {
+  .cajaProductos {
+    margin: 100.9px 100px 160px 100px;
+  }
 }
 /*# sourceMappingURL=categoriaProductos.css.map */

@@ -51,6 +51,10 @@ header .bg-dark p {
   color: #000000;
 }
 
+header .bg-dark .activado {
+  background: rgba(242, 240, 161, 0.5);
+}
+
 header .navHorizontal .lista {
   list-style-type: none;
   display: -webkit-box;
@@ -95,6 +99,12 @@ header .navHorizontal .lista li a {
 
 /*-------------------Resolucion 1024- Desktop-------------------*/
 @media (min-width: 1024px) {
+  header .navbar {
+    display: none;
+  }
+  header .navHorizontal {
+    margin: 0px 90px;
+  }
   header .navHorizontal .lista .desktop {
     display: inline-block;
   }

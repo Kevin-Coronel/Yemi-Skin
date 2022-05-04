@@ -6,19 +6,37 @@
 
 /*-------------------Resolucion 360px- Mobile-------------------*/
 .cajaPreguntasFrecuentes .accordion-item {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* .show{
+
+            .accordion-body{
+
+                margin: 0 5px;
+
+                span, ol li{
+                    font-family: 'Quicksand', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.001em;
+                    color: #000000;
+                }
+            }
+        } */
 }
 
-.cajaPreguntasFrecuentes .accordion-item .accordion-button {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
-  background: rgba(242, 240, 161, 0.5);
-  color: black;
+.cajaPreguntasFrecuentes .accordion-item .accordion-header {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.cajaPreguntasFrecuentes .accordion-item .accordion-button span {
+.cajaPreguntasFrecuentes .accordion-item .accordion-header .accordion-button {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  background: rgba(242, 240, 161, 0.5);
+}
+
+.cajaPreguntasFrecuentes .accordion-item .accordion-header .accordion-button span {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -26,14 +44,28 @@
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.0125em;
-  color: #000000;
+  color: black;
 }
 
-.cajaPreguntasFrecuentes .accordion-item .show .accordion-body {
+.cajaPreguntasFrecuentes .accordion-item .collapsing .accordion-body {
   margin: 0 5px;
 }
 
-.cajaPreguntasFrecuentes .accordion-item .show .accordion-body span, .cajaPreguntasFrecuentes .accordion-item .show .accordion-body ol li {
+.cajaPreguntasFrecuentes .accordion-item .collapsing .accordion-body span, .cajaPreguntasFrecuentes .accordion-item .collapsing .accordion-body ol li {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.001em;
+  color: #000000;
+}
+
+.cajaPreguntasFrecuentes .accordion-item .collapsed .accordion-body, .cajaPreguntasFrecuentes .accordion-item .show .accordion-body {
+  margin: 0 5px;
+}
+
+.cajaPreguntasFrecuentes .accordion-item .collapsed .accordion-body span, .cajaPreguntasFrecuentes .accordion-item .collapsed .accordion-body ol li, .cajaPreguntasFrecuentes .accordion-item .show .accordion-body span, .cajaPreguntasFrecuentes .accordion-item .show .accordion-body ol li {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 400;

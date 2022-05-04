@@ -4,7 +4,7 @@
   padding-bottom: 0.5rem;
 }
 
-.producto {
+.cadaProducto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +17,7 @@
           align-items: center;
 }
 
-.producto .cajaImgProducto {
+.cadaProducto .cajaImgProducto {
   background: rgba(242, 240, 161, 0.5);
   width: 294px;
   height: 294px;
@@ -34,16 +34,24 @@
   margin-top: 52px;
 }
 
-.producto .cajaImgProducto img {
+.cadaProducto .cajaImgProducto .imgCadaProducto {
+  width: 60px;
+}
+
+.cadaProducto .cajaImgProducto img {
   width: 120px;
   height: auto;
 }
 
-.producto .cajaImgProducto .imgCadaProducto {
+.cadaProducto .cajaImgProducto .imgGrandes {
   width: 60px;
 }
 
-.producto .tituloProducto {
+.cadaProducto .cajaDerecha {
+  width: 82%;
+}
+
+.cadaProducto .cajaDerecha .tituloProducto {
   font-family: 'Baskerville Old Face';
   font-style: normal;
   font-weight: 400;
@@ -54,18 +62,7 @@
   margin-top: 9px;
 }
 
-.producto .tituloCadaProducto {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  letter-spacing: 0.001em;
-  color: #000000;
-}
-
-.producto .descripcionProducto {
+.cadaProducto .cajaDerecha .descripcionProducto {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
@@ -74,9 +71,10 @@
   letter-spacing: 0.001em;
   width: 246px;
   margin-top: 8px;
+  text-align: justify;
 }
 
-.producto .precioProducto {
+.cadaProducto .cajaDerecha .precioProducto {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 600;
@@ -86,17 +84,7 @@
   width: 76%;
 }
 
-.producto .precioCadaProducto {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 0.0125em;
-  color: #000000;
-}
-
-.producto .btnComprar {
+.cadaProducto .cajaDerecha .btnComprar {
   background: #671E75;
   -webkit-box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
@@ -107,7 +95,7 @@
   margin-top: 32px;
 }
 
-.producto .btnComprar a {
+.cadaProducto .cajaDerecha .btnComprar a {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 500;
@@ -119,35 +107,12 @@
   text-decoration: none;
 }
 
-.producto .btnComprarPorProducto {
-  background: #671E75;
-  -webkit-box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  width: 160px;
-  height: 48px;
-  border: none;
-  margin-top: 32px;
-}
-
-.producto .btnComprarPorProducto a {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  letter-spacing: 0.0125em;
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.cajaIngredientes {
+.cadaProducto .cajaIngredientes {
   margin-top: 64px;
   width: 294px;
 }
 
-.cajaIngredientes h3 {
+.cadaProducto .cajaIngredientes h3 {
   font-family: 'Baskerville Old Face';
   font-style: normal;
   font-weight: 400;
@@ -157,16 +122,26 @@
   text-align: center;
 }
 
-.cajaIngredientes ul {
+.cadaProducto .cajaIngredientes ul {
   margin-top: 32px;
 }
 
-.cajaComoUsarlo, .cajaBeneficios {
+.cadaProducto .cajaIngredientes ul li {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.005em;
+  color: #383838;
+}
+
+.cadaProducto .cajaComoUsarlo, .cadaProducto .cajaBeneficios {
   margin-top: 32px;
   width: 294px;
 }
 
-.cajaComoUsarlo h4, .cajaComoUsarlo h5, .cajaBeneficios h4, .cajaBeneficios h5 {
+.cadaProducto .cajaComoUsarlo h4, .cadaProducto .cajaComoUsarlo h5, .cadaProducto .cajaBeneficios h4, .cadaProducto .cajaBeneficios h5 {
   font-family: 'Baskerville Old Face';
   font-style: normal;
   font-weight: 400;
@@ -176,24 +151,95 @@
   text-align: center;
 }
 
-.cajaComoUsarlo ol, .cajaComoUsarlo ul, .cajaBeneficios ol, .cajaBeneficios ul {
+.cadaProducto .cajaComoUsarlo ol, .cadaProducto .cajaComoUsarlo ul, .cadaProducto .cajaBeneficios ol, .cadaProducto .cajaBeneficios ul {
   margin-top: 32px;
 }
 
-.cajaComoUsarlo ul, .cajaBeneficios ul {
+.cadaProducto .cajaComoUsarlo ol li, .cadaProducto .cajaComoUsarlo ul li, .cadaProducto .cajaBeneficios ol li, .cadaProducto .cajaBeneficios ul li {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0.001em;
+  color: #383838;
+}
+
+.cadaProducto .cajaComoUsarlo ul, .cadaProducto .cajaBeneficios ul {
   margin-bottom: 94px;
 }
 
 @media (min-width: 1024px) {
-  .cajaDeProductos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .cadaProducto {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .cadaProducto .cajaImgProducto {
+    width: 450px;
+    height: 450px;
+  }
+  .cadaProducto .cajaImgProducto img {
+    width: 200px;
+  }
+  .cadaProducto .cajaImgProducto .imgGrandes {
+    width: 90px;
+  }
+  .cadaProducto .cajaDerecha {
+    width: 40%;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .cadaProducto .cajaDerecha .tituloProducto {
+    text-align-last: left;
+  }
+  .cadaProducto .cajaDerecha .descripcionProducto {
+    width: 100%;
+  }
+  .cadaProducto .cajaInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cadaProducto .cajaInfo .cajaIngredientes {
+    margin-top: 32px;
+  }
+  .cadaProducto .cajaInfo .cajaIngredientes h3 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .cadaProducto .cajaInfo .cajaIngredientes ul li {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.005em;
+  }
+  .cadaProducto .cajaInfo .cajaComoUsarlo h4, .cadaProducto .cajaInfo .cajaComoUsarlo h5, .cadaProducto .cajaInfo .cajaBeneficios h4, .cadaProducto .cajaInfo .cajaBeneficios h5 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .cadaProducto .cajaInfo .cajaComoUsarlo ol li, .cadaProducto .cajaInfo .cajaComoUsarlo ul li, .cadaProducto .cajaInfo .cajaBeneficios ol li, .cadaProducto .cajaInfo .cajaBeneficios ul li {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.005em;
   }
 }
 /*# sourceMappingURL=plantillaProductos.css.map */

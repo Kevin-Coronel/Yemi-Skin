@@ -1,0 +1,86 @@
+.titleCont {
+  text-align: center;
+  font-family: 'Baskervville', serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 32px 0px 32px 0px;
+}
+
+.titleContD {
+  display: none;
+}
+
+.medios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.medios .order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin: 32px;
+}
+
+.medios .order .iconos {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+}
+
+.medios .order a {
+  color: black;
+  text-decoration: none;
+}
+
+.medios .order a p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+/*-------------------Resolucion 1024- Desktop-------------------*/
+@media (min-width: 768px) {
+  .medios div {
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .titleCont {
+    display: none;
+  }
+  .divTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 32px 0px 32px 0px;
+    text-align: center;
+  }
+  .divTitle .titleContD {
+    display: contents;
+    font-family: 'Baskervville', serif;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  .medios div {
+    margin-left: 25%;
+  }
+}
+/*# sourceMappingURL=contactanos.css.map */

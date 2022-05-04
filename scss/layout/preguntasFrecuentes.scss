@@ -13,29 +13,65 @@
 /*-------------------Resolucion 360px- Mobile-------------------*/
 
 .cajaPreguntasFrecuentes{
-    .accordion-item {
-        border: 1px solid rgba(0, 0, 0, 0.2);
 
-        .accordion-button{
-            border-top-left-radius: calc(0.25rem - 1px);
-            border-top-right-radius: calc(0.25rem - 1px);
-            background: rgba(242, 240, 161, 0.5);
-            color: black;
+    .accordion-item {
+
+        .accordion-header {
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 
-            span{
-                font-family: 'Quicksand', sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 18px;
-                text-align: center;
-                letter-spacing: 0.0125em;
-                color: #000000;
+            .accordion-button{
+                border-top-left-radius: calc(0.25rem - 1px);
+                border-top-right-radius: calc(0.25rem - 1px);
+                background: rgba(242, 240, 161, 0.5);
+    
+                span{
+                    font-family: 'Quicksand', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-align: center;
+                    letter-spacing: 0.0125em;
+                    color: black;
+                }
             }
         }
 
-        .show{
+        .collapsing {
+
+            .accordion-body {
+                margin: 0 5px;
+
+                span, ol li{
+                    font-family: 'Quicksand', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.001em;
+                    color: #000000;
+                }
+            }
+        }
+
+        .collapsed, .show {
+
+            .accordion-body {
+                margin: 0 5px;
+
+                span, ol li{
+                    font-family: 'Quicksand', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.001em;
+                    color: #000000;
+                }
+            }
+        }
+
+        /* .show{
 
             .accordion-body{
 
@@ -51,7 +87,7 @@
                     color: #000000;
                 }
             }
-        }
+        } */
     }
 }
 

@@ -10,6 +10,7 @@
   /* Resolucion 360px- Mobile*/
   /*-------------------Resolucion 1024- Desktop-------------------*/
   /*-------------------Resolucion 1024- Desktop-------------------*/
+  /*-------------------Resolucion 1024- Desktop-------------------*/
   /*-------------------Resolucion 360px- Mobile-------------------*/
   /*-------------------Resolucion 1024- Desktop-------------------*/
   /*-------------------Resolucion 1024- Desktop-------------------*/
@@ -70,6 +71,10 @@
   color: #000000;
 }
 
+* body header .bg-dark .activado {
+  background: rgba(242, 240, 161, 0.5);
+}
+
 * body header .navHorizontal .lista {
   list-style-type: none;
   display: -webkit-box;
@@ -113,6 +118,12 @@
 }
 
 @media (min-width: 1024px) {
+  * body header .navbar {
+    display: none;
+  }
+  * body header .navHorizontal {
+    margin: 0px 90px;
+  }
   * body header .navHorizontal .lista .desktop {
     display: inline-block;
   }
@@ -157,7 +168,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 14px;
 }
 
@@ -231,7 +242,7 @@
 }
 
 * body .fondoL .tarjB .textoTarj {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 14;
   text-align: center;
   margin: 16px;
@@ -253,7 +264,7 @@
 * body .fondoL .tarjB .btn-primary {
   background-color: #671e75;
   border-color: #671e75;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 14px;
 }
 
@@ -357,20 +368,18 @@
   padding-bottom: 0.5rem;
 }
 
-* body .cajaProductos .accordion-item {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-* body .cajaProductos .accordion-item .accordion-button {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
-  background: rgba(242, 240, 161, 0.5);
-  color: black;
+* body .cajaProductos .accordion-item .accordion-header {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-* body .cajaProductos .accordion-item .accordion-button span {
+* body .cajaProductos .accordion-item .accordion-header .accordion-button {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  background: rgba(242, 240, 161, 0.5);
+}
+
+* body .cajaProductos .accordion-item .accordion-header .accordion-button span {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -378,19 +387,10 @@
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.0125em;
-  color: #000000;
+  color: black;
 }
 
-* body .cajaProductos .accordion-item .accordion-button span a {
-  text-decoration: none;
-  color: #000000;
-}
-
-* body .cajaProductos .accordion-item .show hr {
-  margin: 0;
-}
-
-* body .cajaProductos .accordion-item .show .accordion-body span, * body .cajaProductos .accordion-item .show .collapsing .accordion-body span {
+* body .cajaProductos .accordion-item .collapsing .accordion-body span a {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -399,20 +399,49 @@
   text-align: center;
   letter-spacing: 0.001em;
   color: #000000;
-}
-
-* body .cajaProductos .accordion-item .show .accordion-body span a, * body .cajaProductos .accordion-item .show .collapsing .accordion-body span a {
   text-decoration: none;
+  text-decoration: none;
+}
+
+* body .cajaProductos .accordion-item .collapsing hr {
+  margin: 0;
+}
+
+* body .cajaProductos .accordion-item .collapsed .accordion-body span a, * body .cajaProductos .accordion-item .show .accordion-body span a {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.001em;
   color: #000000;
+  text-decoration: none;
+  text-decoration: none;
 }
 
-* body .navM .lista li .activado {
-  color: #671E75;
-  border-bottom: 1px solid #671E75;
-  padding-bottom: 0.5rem;
+* body .cajaProductos .accordion-item .collapsed hr, * body .cajaProductos .accordion-item .show hr {
+  margin: 0;
 }
 
-* body .producto {
+@media (min-width: 1024px) {
+  * body .cajaProductos {
+    margin: 100.9px 100px 160px 100px;
+  }
+}
+
+* body .cajaDeProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* body .cajaDeProductos .productos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,9 +452,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-* body .producto .cajaImgProducto {
+* body .cajaDeProductos .productos .cajaImgProducto {
   background: rgba(242, 240, 161, 0.5);
   width: 294px;
   height: 294px;
@@ -442,27 +474,20 @@
   margin-top: 52px;
 }
 
-* body .producto .cajaImgProducto img {
+* body .cajaDeProductos .productos .cajaImgProducto .imgCadaProducto {
+  width: 60px;
+}
+
+* body .cajaDeProductos .productos .cajaImgProducto img {
   width: 120px;
   height: auto;
 }
 
-* body .producto .cajaImgProducto .imgCadaProducto {
+* body .cajaDeProductos .productos .cajaImgProducto .imgProducto {
   width: 60px;
 }
 
-* body .producto .tituloProducto {
-  font-family: 'Baskerville Old Face';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  text-align: center;
-  letter-spacing: 0.0015em;
-  margin-top: 9px;
-}
-
-* body .producto .tituloCadaProducto {
+* body .cajaDeProductos .productos .tituloProducto {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
@@ -473,28 +498,7 @@
   color: #000000;
 }
 
-* body .producto .descripcionProducto {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.001em;
-  width: 246px;
-  margin-top: 8px;
-}
-
-* body .producto .precioProducto {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 0.0125em;
-  width: 76%;
-}
-
-* body .producto .precioCadaProducto {
+* body .cajaDeProductos .productos .precioProducto {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 600;
@@ -504,30 +508,7 @@
   color: #000000;
 }
 
-* body .producto .btnComprar {
-  background: #671E75;
-  -webkit-box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  width: 294px;
-  height: 48px;
-  border: none;
-  margin-top: 32px;
-}
-
-* body .producto .btnComprar a {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  letter-spacing: 0.0125em;
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-* body .producto .btnComprarPorProducto {
+* body .cajaDeProductos .productos .btnComprarProducto {
   background: #671E75;
   -webkit-box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
@@ -538,7 +519,7 @@
   margin-top: 32px;
 }
 
-* body .producto .btnComprarPorProducto a {
+* body .cajaDeProductos .productos .btnComprarProducto a {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 500;
@@ -550,12 +531,130 @@
   text-decoration: none;
 }
 
-* body .cajaIngredientes {
+@media (min-width: 1024px) {
+  * body .cajaDeProductos .productos {
+    width: 33%;
+  }
+  * body .cajaDeProductos .productos .tituloProducto {
+    width: 70%;
+  }
+}
+
+* body .navM .lista li .activado {
+  color: #671E75;
+  border-bottom: 1px solid #671E75;
+  padding-bottom: 0.5rem;
+}
+
+* body .cadaProducto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .cadaProducto .cajaImgProducto {
+  background: rgba(242, 240, 161, 0.5);
+  width: 294px;
+  height: 294px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 52px;
+}
+
+* body .cadaProducto .cajaImgProducto .imgCadaProducto {
+  width: 60px;
+}
+
+* body .cadaProducto .cajaImgProducto img {
+  width: 120px;
+  height: auto;
+}
+
+* body .cadaProducto .cajaImgProducto .imgGrandes {
+  width: 60px;
+}
+
+* body .cadaProducto .cajaDerecha {
+  width: 82%;
+}
+
+* body .cadaProducto .cajaDerecha .tituloProducto {
+  font-family: 'Baskerville Old Face';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.0015em;
+  margin-top: 9px;
+}
+
+* body .cadaProducto .cajaDerecha .descripcionProducto {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.001em;
+  width: 246px;
+  margin-top: 8px;
+  text-align: justify;
+}
+
+* body .cadaProducto .cajaDerecha .precioProducto {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.0125em;
+  width: 76%;
+}
+
+* body .cadaProducto .cajaDerecha .btnComprar {
+  background: #671E75;
+  -webkit-box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 294px;
+  height: 48px;
+  border: none;
+  margin-top: 32px;
+}
+
+* body .cadaProducto .cajaDerecha .btnComprar a {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.0125em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+* body .cadaProducto .cajaIngredientes {
   margin-top: 64px;
   width: 294px;
 }
 
-* body .cajaIngredientes h3 {
+* body .cadaProducto .cajaIngredientes h3 {
   font-family: 'Baskerville Old Face';
   font-style: normal;
   font-weight: 400;
@@ -565,16 +664,26 @@
   text-align: center;
 }
 
-* body .cajaIngredientes ul {
+* body .cadaProducto .cajaIngredientes ul {
   margin-top: 32px;
 }
 
-* body .cajaComoUsarlo, * body .cajaBeneficios {
+* body .cadaProducto .cajaIngredientes ul li {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.005em;
+  color: #383838;
+}
+
+* body .cadaProducto .cajaComoUsarlo, * body .cadaProducto .cajaBeneficios {
   margin-top: 32px;
   width: 294px;
 }
 
-* body .cajaComoUsarlo h4, * body .cajaComoUsarlo h5, * body .cajaBeneficios h4, * body .cajaBeneficios h5 {
+* body .cadaProducto .cajaComoUsarlo h4, * body .cadaProducto .cajaComoUsarlo h5, * body .cadaProducto .cajaBeneficios h4, * body .cadaProducto .cajaBeneficios h5 {
   font-family: 'Baskerville Old Face';
   font-style: normal;
   font-weight: 400;
@@ -584,24 +693,95 @@
   text-align: center;
 }
 
-* body .cajaComoUsarlo ol, * body .cajaComoUsarlo ul, * body .cajaBeneficios ol, * body .cajaBeneficios ul {
+* body .cadaProducto .cajaComoUsarlo ol, * body .cadaProducto .cajaComoUsarlo ul, * body .cadaProducto .cajaBeneficios ol, * body .cadaProducto .cajaBeneficios ul {
   margin-top: 32px;
 }
 
-* body .cajaComoUsarlo ul, * body .cajaBeneficios ul {
+* body .cadaProducto .cajaComoUsarlo ol li, * body .cadaProducto .cajaComoUsarlo ul li, * body .cadaProducto .cajaBeneficios ol li, * body .cadaProducto .cajaBeneficios ul li {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0.001em;
+  color: #383838;
+}
+
+* body .cadaProducto .cajaComoUsarlo ul, * body .cadaProducto .cajaBeneficios ul {
   margin-bottom: 94px;
 }
 
 @media (min-width: 1024px) {
-  * body .cajaDeProductos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  * body .cadaProducto {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  * body .cadaProducto .cajaImgProducto {
+    width: 450px;
+    height: 450px;
+  }
+  * body .cadaProducto .cajaImgProducto img {
+    width: 200px;
+  }
+  * body .cadaProducto .cajaImgProducto .imgGrandes {
+    width: 90px;
+  }
+  * body .cadaProducto .cajaDerecha {
+    width: 40%;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  * body .cadaProducto .cajaDerecha .tituloProducto {
+    text-align-last: left;
+  }
+  * body .cadaProducto .cajaDerecha .descripcionProducto {
+    width: 100%;
+  }
+  * body .cadaProducto .cajaInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  * body .cadaProducto .cajaInfo .cajaIngredientes {
+    margin-top: 32px;
+  }
+  * body .cadaProducto .cajaInfo .cajaIngredientes h3 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  * body .cadaProducto .cajaInfo .cajaIngredientes ul li {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.005em;
+  }
+  * body .cadaProducto .cajaInfo .cajaComoUsarlo h4, * body .cadaProducto .cajaInfo .cajaComoUsarlo h5, * body .cadaProducto .cajaInfo .cajaBeneficios h4, * body .cadaProducto .cajaInfo .cajaBeneficios h5 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  * body .cadaProducto .cajaInfo .cajaComoUsarlo ol li, * body .cadaProducto .cajaInfo .cajaComoUsarlo ul li, * body .cadaProducto .cajaInfo .cajaBeneficios ol li, * body .cadaProducto .cajaInfo .cajaBeneficios ul li {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.005em;
   }
 }
 
@@ -648,7 +828,7 @@
 }
 
 * body .texto {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 32px;
@@ -659,7 +839,7 @@
 
 * body .textoD {
   display: none;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 32px;
@@ -781,19 +961,37 @@
 }
 
 * body .cajaPreguntasFrecuentes .accordion-item {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* .show{
+
+            .accordion-body{
+
+                margin: 0 5px;
+
+                span, ol li{
+                    font-family: 'Quicksand', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.001em;
+                    color: #000000;
+                }
+            }
+        } */
 }
 
-* body .cajaPreguntasFrecuentes .accordion-item .accordion-button {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
-  background: rgba(242, 240, 161, 0.5);
-  color: black;
+* body .cajaPreguntasFrecuentes .accordion-item .accordion-header {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-* body .cajaPreguntasFrecuentes .accordion-item .accordion-button span {
+* body .cajaPreguntasFrecuentes .accordion-item .accordion-header .accordion-button {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  background: rgba(242, 240, 161, 0.5);
+}
+
+* body .cajaPreguntasFrecuentes .accordion-item .accordion-header .accordion-button span {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -801,14 +999,28 @@
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.0125em;
-  color: #000000;
+  color: black;
 }
 
-* body .cajaPreguntasFrecuentes .accordion-item .show .accordion-body {
+* body .cajaPreguntasFrecuentes .accordion-item .collapsing .accordion-body {
   margin: 0 5px;
 }
 
-* body .cajaPreguntasFrecuentes .accordion-item .show .accordion-body span, * body .cajaPreguntasFrecuentes .accordion-item .show .accordion-body ol li {
+* body .cajaPreguntasFrecuentes .accordion-item .collapsing .accordion-body span, * body .cajaPreguntasFrecuentes .accordion-item .collapsing .accordion-body ol li {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.001em;
+  color: #000000;
+}
+
+* body .cajaPreguntasFrecuentes .accordion-item .collapsed .accordion-body, * body .cajaPreguntasFrecuentes .accordion-item .show .accordion-body {
+  margin: 0 5px;
+}
+
+* body .cajaPreguntasFrecuentes .accordion-item .collapsed .accordion-body span, * body .cajaPreguntasFrecuentes .accordion-item .collapsed .accordion-body ol li, * body .cajaPreguntasFrecuentes .accordion-item .show .accordion-body span, * body .cajaPreguntasFrecuentes .accordion-item .show .accordion-body ol li {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -872,7 +1084,7 @@
 }
 
 * body .medios .order a p {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 500;
   margin: 0px;
