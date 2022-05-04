@@ -803,16 +803,18 @@
 * body .contenedor .img {
   width: 296px;
   height: 228px;
-  background-image: url("../imagenes/quienes 1.jpeg");
+  background-image: url("../../imagenes/quienes 1.jpeg");
   background-size: cover;
+  border-radius: 3px;
   margin: 32px 0px 32px 0px;
 }
 
 * body .contenedor .img2 {
   width: 296px;
   height: 228px;
-  background-image: url("../imagenes/quienes2.jpeg");
+  background-image: url("../../imagenes/quienes2.jpeg");
   background-size: cover;
+  border-radius: 3px;
   margin: 32px 0px 32px 0px;
 }
 
