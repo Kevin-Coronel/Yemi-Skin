@@ -1,0 +1,110 @@
+.cajaDonde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+    h2 {
+        font-family: 'Baskerville Old Face';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.0015em;
+        color: #000000;
+    }
+
+    .imgDonde {
+        margin: 32px 0px;
+
+        img {
+            border-radius: 8px;
+            width: 294px;
+            height: 208px;
+            object-fit: cover;
+        }
+    }
+
+    .textoDonde {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.001em;
+        color: #000000;
+        width: 294px;
+        height: 256px;
+    }
+
+    button {
+        width: 294px;
+        height: 48px;
+        left: 33px;
+        top: 672px;
+        background: #671E75;
+        box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        margin-top: 32px;
+
+        a {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.0125em;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .cajaDonde {
+        margin-bottom: 130px;
+
+        h2 {
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        .cajaInfoDonde {
+            display: flex;
+            align-items: flex-end;
+
+            .imgDonde {
+
+                img {
+                    width: 370px;
+                    height: 248px;
+                }
+            }
+
+            .cajaInfoDer {
+                margin-left: 32px;
+
+                .textoDonde {
+                    width: 528px;
+                    height: 192px;
+                    font-size: 20px;
+                    line-height: 32px;
+                    text-align: left;
+                }
+
+                button {
+
+                    a {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
