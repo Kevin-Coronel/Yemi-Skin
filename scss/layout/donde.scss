@@ -15,53 +15,60 @@
         color: #000000;
     }
 
-    .imgDonde {
-        margin: 32px 0px;
+    .cajaInfoDonde {
 
-        img {
-            border-radius: 8px;
-            width: 294px;
-            height: 208px;
-            object-fit: cover;
+        .imgDonde {
+            margin: 32px 0px;
+    
+            img {
+                border-radius: 8px;
+                width: 294px;
+                height: 208px;
+                object-fit: cover;
+            }
+        }
+
+        .cajaInfoDer {
+
+            .textoDonde {
+                font-family: 'Quicksand';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 32px;
+                text-align: center;
+                letter-spacing: 0.001em;
+                color: #000000;
+                width: 294px;
+                height: 256px;
+            }
+        
+            button {
+                width: 294px;
+                height: 48px;
+                left: 33px;
+                top: 672px;
+                background: #671E75;
+                box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.3);
+                border-radius: 10px;
+                margin-top: 32px;
+                border: none;
+        
+                a {
+                    font-family: 'Quicksand';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-align: center;
+                    letter-spacing: 0.0125em;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+            }
         }
     }
 
-    .textoDonde {
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 32px;
-        text-align: center;
-        letter-spacing: 0.001em;
-        color: #000000;
-        width: 294px;
-        height: 256px;
-    }
-
-    button {
-        width: 294px;
-        height: 48px;
-        left: 33px;
-        top: 672px;
-        background: #671E75;
-        box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-        margin-top: 32px;
-        border: none;
-
-        a {
-            font-family: 'Quicksand';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 18px;
-            text-align: center;
-            letter-spacing: 0.0125em;
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-    }
 }
 
 @media (min-width: 1024px) {

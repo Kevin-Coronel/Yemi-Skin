@@ -23,11 +23,11 @@
   color: #000000;
 }
 
-.cajaDonde .imgDonde {
+.cajaDonde .cajaInfoDonde .imgDonde {
   margin: 32px 0px;
 }
 
-.cajaDonde .imgDonde img {
+.cajaDonde .cajaInfoDonde .imgDonde img {
   border-radius: 8px;
   width: 294px;
   height: 208px;
@@ -35,7 +35,7 @@
      object-fit: cover;
 }
 
-.cajaDonde .textoDonde {
+.cajaDonde .cajaInfoDonde .cajaInfoDer .textoDonde {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
@@ -48,7 +48,7 @@
   height: 256px;
 }
 
-.cajaDonde button {
+.cajaDonde .cajaInfoDonde .cajaInfoDer button {
   width: 294px;
   height: 48px;
   left: 33px;
@@ -61,7 +61,7 @@
   border: none;
 }
 
-.cajaDonde button a {
+.cajaDonde .cajaInfoDonde .cajaInfoDer button a {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 500;
