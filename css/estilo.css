@@ -590,7 +590,16 @@
 }
 
 * body .cadaProducto .cajaDerecha {
-  width: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 * body .cadaProducto .cajaDerecha .tituloProducto {
@@ -623,7 +632,6 @@
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 0.0125em;
-  width: 76%;
 }
 
 * body .cadaProducto .cajaDerecha .btnComprar {
@@ -782,6 +790,9 @@
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.005em;
+  }
+  * body .cadaProducto .cajaInfo .desktop {
+    margin: 0 200px;
   }
 }
 
