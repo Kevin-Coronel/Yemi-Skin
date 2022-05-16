@@ -153,6 +153,10 @@
   .container {
     max-width: 850px;
   }
+  .container img {
+    width: 800px !important;
+    height: 400px !important;
+  }
   .envios img {
     width: 72px;
     height: 72px;
